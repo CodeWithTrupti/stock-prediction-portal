@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from './Header'
 import Button from './Button'
+import Footer from './Footer'
 
 const Main = () => {
   return (
     <> 
+       
        <div className='container mt-5'>
           <div className='row justify-content-center'>
             <div className='col-lg-8 col-md-10'>
@@ -15,6 +18,7 @@ const Main = () => {
             </div>
           </div>
        </div>
+      
     </>
   )
 }
