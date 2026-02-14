@@ -5,11 +5,11 @@ const AuthContext = createContext();
 
 const AuthProvider = ({children}) => {
 
-    const [isLoggedin,setIsLoggedIn] = useState(
+    const [isLoggedIn,setIsLoggedIn] = useState(
         !!localStorage.getItem(`accessToken`)
     )
   return (
-    <AuthContext.Provider value={{isLoggedin,setIsLoggedIn}}>
+    <AuthContext.Provider value={{isLoggedIn,setIsLoggedIn}}>
         {children}
     </AuthContext.Provider>
   )
